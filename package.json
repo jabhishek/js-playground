@@ -1,0 +1,32 @@
+{
+  "name": "js-playground",
+  "version": "0.0.0",
+  "description": "ES6 karma jasmine template",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "es6",
+    "ecmascript",
+    "karma",
+    "jasmine",
+    "gulp"
+  ],
+  "author": "Abhishek Jain",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-load-plugins": "^0.8.1",
+    "karma": "^0.12.31",
+    "gulp-karma": "0.0.4",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "gulp-using": "0.0.1",
+    "jasmine-core": "^2.2.0",
+    "karma-jasmine": "^0.3.5",
+    "karma-babel-preprocessor": "^4.0.0",
+    "babel": "^4.6.6",
+    "karma-chrome-launcher": "^0.1.7",
+    "lodash": "^3.3.1"
+  }
+}
