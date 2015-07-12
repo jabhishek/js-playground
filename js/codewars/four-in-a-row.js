@@ -92,7 +92,7 @@ function connectFour(board) {
 	}
 }
 describe("four-in-a-row", function () {
-	fit("should get the correct winner top right ", function () {
+	it("should get the correct winner top right ", function () {
 		var board = [
 			['-', '-', '-', 'R', '-', '-', 'R'],
 			['-', '-', '-', 'R', 'R', 'R', '-'],
@@ -105,7 +105,7 @@ describe("four-in-a-row", function () {
 		expect(connectFour(board)).toEqual("R");
 	});
 
-	fit("should get the correct winner horizontally", function () {
+	it("should get the correct winner horizontally", function () {
 		var board = [
 			['-', '-', '-', '-', '-', '-', '-'],
 			['-', '-', '-', '-', '-', '-', '-'],
@@ -129,7 +129,7 @@ describe("four-in-a-row", function () {
 
 	});
 
-	fit("should get the correct winner vertically", function () {
+	it("should get the correct winner vertically", function () {
 		var board = [
 			['-', '-', '-', '-', '-', '-', '-'],
 			['-', '-', '-', '-', '-', '-', '-'],
@@ -154,7 +154,7 @@ describe("four-in-a-row", function () {
 
 	});
 
-	fit("should get the correct winner down right ", function () {
+	it("should get the correct winner down right ", function () {
 		var board = [
 			['-', '-', '-', 'R', '-', '-', '-'],
 			['-', '-', '-', 'R', 'R', 'R', '-'],
@@ -167,7 +167,7 @@ describe("four-in-a-row", function () {
 		expect(connectFour(board)).toEqual("R");
 	});
 
-	fit("should get draw if the board is full and no winners", function () {
+	it("should get draw if the board is full and no winners", function () {
 		"use strict";
 		var board = [
 			['Y', 'R', 'Y', 'Y', 'R', 'R', 'Y'],
@@ -182,7 +182,7 @@ describe("four-in-a-row", function () {
 
 	});
 
-	fit("should get In progress if the board is not full and no winners", function () {
+	it("should get In progress if the board is not full and no winners", function () {
 		"use strict";
 		var board = [
 			['-', '-', '-', '-', '-', '-', '-'],
